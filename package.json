@@ -1,1 +1,9 @@
-{"name":"campuscare","private":true,"scripts":{"dev:backend":"npm --prefix backend run dev","dev:frontend":"npm --prefix frontend run dev","install:all":"npm install && npm --prefix backend install && npm --prefix frontend install"}}
+{
+    "name":  "campuscare",
+    "private":  true,
+    "scripts":  {
+                    "dev:backend":  "cd backend \u0026\u0026 npm run dev",
+                    "dev:frontend":  "cd frontend \u0026\u0026 npm run dev",
+                    "install:all":  "npm install \u0026\u0026 npm --prefix backend install \u0026\u0026 npm --prefix frontend install"
+                }
+}

@@ -1,4 +1,6 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+import { fileURLToPath } from 'node:url';
+dotenv.config({ path: fileURLToPath(new URL('./.env', import.meta.url)) });
 import express from 'express'; import cors from 'cors'; import mongoose from 'mongoose';
 import complaints from './routes/complaints.js'; import analytics from './routes/analytics.js';
 const app=express(); app.use(cors({origin:process.env.CLIENT_ORIGIN||'http://localhost:5173'})); app.use(express.json({limit:'20kb'}));
